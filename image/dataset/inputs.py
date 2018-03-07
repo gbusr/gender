@@ -63,6 +63,7 @@ def train_batch(filenames, batch_size, target_image_size=[224, 224, 3],
     return _input(filenames, batch_size, target_image_size, 
                     num_epochs, n_classes, shuffle, is_training)
 
+
 def val_batch(filenames, batch_size, target_image_size=[224, 224, 3],
         num_epochs=None, n_classes=2, shuffle=False, is_training=False):
     return _input(filenames, batch_size, target_image_size, 

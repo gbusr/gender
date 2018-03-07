@@ -1,0 +1,23 @@
+{
+    "input": [{
+        "train_tfrecord_file": "data/train.tfrecords",
+        "val_tfrecord_file": "data/val.tfrecords",
+        "image_size": 224,
+        "batch_size": 64,
+        "num_epochs": 1
+    }],
+
+    "optimzer": [{
+        "net": "squeezenet",
+        "num_classes": 2,
+        "weight_decay": 0.0,
+        "batch_norm_decay": 0.9,
+        "learning_rate": 0.01,
+        "max_step": 30000
+    }],
+
+    "log": [{
+        "train_log_dir": "log/val",
+        "val_log_dir": "log/train"
+    }]
+}
